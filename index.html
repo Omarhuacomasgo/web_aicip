@@ -6,561 +6,807 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Academia Iberoamericana de Ciencia Política — Conectamos ideas, formamos líderes y fortalecemos la democracia en Iberoamérica.">
   <meta property="og:title" content="AICIP — Academia Iberoamericana de Ciencia Política">
-  <meta property="og:description" content="Asociación civil sin fines de lucro dedicada a la formación de líderes y el fortalecimiento democrático en Iberoamérica.">
+  <meta property="og:description" content="Organización de la sociedad civil sin fines de lucro dedicada a la formación de líderes y el fortalecimiento democrático.">
   <title>AICIP — Academia Iberoamericana de Ciencia Política</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <!-- COLOR STRIP TOP -->
+  <div class="color-strip color-strip-top" aria-hidden="true"></div>
+
   <!-- NAVBAR -->
-  <header id="navbar">
+  <header id="navbar" role="banner">
     <nav class="nav-container" aria-label="Navegación principal">
       <a href="#inicio" class="nav-logo">
-        <img src="logos/ORIGINAL.png" alt="AICIP" height="48">
+        <img src="logos/logo-blanco.svg" id="nav-logo-img" alt="AICIP" height="44">
       </a>
       <button class="hamburger" aria-label="Abrir menú" aria-expanded="false" id="hamburger">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#inicio">Inicio</a></li>
+      <ul class="nav-links" id="nav-links" role="list">
         <li><a href="#quienes-somos">Quiénes somos</a></li>
-        <li><a href="#valores">Valores</a></li>
-        <li><a href="#organigrama">Organigrama</a></li>
         <li><a href="#eventos">Eventos</a></li>
         <li><a href="#servicios">Servicios</a></li>
         <li><a href="#publicaciones">Publicaciones</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
-      <a href="https://www.facebook.com/aicipoficial" target="_blank" rel="noopener noreferrer" class="nav-cta">Síguenos en Facebook</a>
+      <a href="https://www.instagram.com/aicipoficial/" class="nav-cta" target="_blank" rel="noopener noreferrer">
+        @aicipoficial
+      </a>
     </nav>
   </header>
 
   <main>
 
     <!-- SECCIÓN 1: HERO -->
-    <section id="inicio" class="hero">
+    <section id="inicio" aria-label="Inicio">
+      <div class="hero-glow" aria-hidden="true"></div>
       <div class="hero-content">
-        <img src="logos/NEGATIVO.png" alt="AICIP" height="72" class="hero-logo">
-        <h1>Conectamos ideas, formamos líderes y fortalecemos la democracia en Iberoamérica</h1>
-        <p class="hero-sub">Somos una asociación civil sin fines de lucro dedicada a promover el diálogo político y la formación de líderes comprometidos con el bien común.</p>
-        <div class="hero-buttons">
-          <a href="#quienes-somos" class="btn btn-primary">Conoce nuestra misión</a>
-          <a href="https://www.facebook.com/aicipoficial" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Síguenos en Facebook</a>
+        <div class="hero-eyebrow">Academia Iberoamericana de Ciencia Política</div>
+        <h1 class="hero-title">
+          Conectamos ideas,<br>
+          <span style="color:#f86211">formamos líderes</span><br>
+          y fortalecemos la democracia en Iberoamérica
+        </h1>
+        <p class="hero-desc">
+          Somos una organización de la sociedad civil sin fines de lucro.
+          Nuestros programas de formación y diálogo son de acceso libre porque
+          creemos que el conocimiento político es un bien público.
+        </p>
+        <p class="hero-mission">
+          Nos sostenemos gracias al compromiso de quienes comparten esta visión.
+        </p>
+        <div class="hero-ctas">
+          <a href="#eventos" class="btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+            </svg>
+            Quiero formarme
+          </a>
+          <a href="#servicios" class="btn-secondary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            </svg>
+            Necesito asesoría
+          </a>
         </div>
+        <p class="hero-subnote">Formación · Acceso libre y gratuito</p>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">
+        <div class="scroll-line">
+          <div class="scroll-dot"></div>
+        </div>
+        <span class="scroll-label">SCROLL</span>
       </div>
     </section>
 
     <!-- SECCIÓN 2: QUIÉNES SOMOS -->
-    <section id="quienes-somos" class="section bg-light">
-      <div class="container">
-        <span class="section-label">Nuestra identidad</span>
-        <h2 class="section-title">¿Quiénes somos?</h2>
-        <p class="section-intro">Somos una asociación civil sin fines de lucro. Conectamos ideas, formamos líderes y promovemos el diálogo para fortalecer la democracia y el desarrollo político en Iberoamérica.</p>
-        <div class="cards-2col">
+    <section id="quienes-somos" aria-labelledby="quienes-title">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">Nuestra identidad</span>
+          <h2 id="quienes-title" class="section-title">¿Quiénes somos?</h2>
+          <p class="section-intro">
+            Asociación civil sin fines de lucro que conecta ideas, forma líderes y
+            promueve el diálogo para fortalecer la democracia en Iberoamérica.
+          </p>
+        </div>
+        <div class="two-col-cards">
           <!-- Misión -->
-          <div class="card card-top-border">
-            <div class="card-icon">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <circle cx="18" cy="18" r="15" stroke="var(--orange)" stroke-width="2.5"/>
-                <circle cx="18" cy="18" r="8" stroke="var(--orange)" stroke-width="2.5"/>
-                <circle cx="18" cy="18" r="2.5" fill="var(--orange)"/>
-                <line x1="18" y1="3" x2="18" y2="8" stroke="var(--orange)" stroke-width="2"/>
-                <line x1="18" y1="28" x2="18" y2="33" stroke="var(--orange)" stroke-width="2"/>
-                <line x1="3" y1="18" x2="8" y2="18" stroke="var(--orange)" stroke-width="2"/>
-                <line x1="28" y1="18" x2="33" y2="18" stroke="var(--orange)" stroke-width="2"/>
+          <div class="identity-card identity-card--orange">
+            <div class="identity-card-icon" style="background:#fff3ec;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f86211" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12,6 12,12 16,14"/>
               </svg>
             </div>
-            <h3>Misión</h3>
-            <p>Formamos a los servidores públicos que liderarán el futuro, conectamos a la ciudadanía con la política a través del conocimiento y proponemos soluciones innovadoras para los desafíos de la gobernanza democrática.</p>
+            <h3 class="identity-card-title">Misión</h3>
+            <p class="identity-card-text">
+              Formamos a los servidores públicos que liderarán el futuro,
+              conectamos a la ciudadanía con la política a través del conocimiento
+              y proponemos soluciones innovadoras para los desafíos de la gobernanza
+              democrática.
+            </p>
           </div>
           <!-- Visión -->
-          <div class="card card-top-border">
-            <div class="card-icon">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M4 28 L18 8 L32 28" stroke="var(--orange)" stroke-width="2.5" stroke-linejoin="round"/>
-                <line x1="4" y1="28" x2="32" y2="28" stroke="var(--orange)" stroke-width="2.5"/>
-                <circle cx="18" cy="20" r="4" fill="var(--orange)" opacity="0.3"/>
-                <circle cx="18" cy="20" r="2" fill="var(--orange)"/>
-                <line x1="18" y1="8" x2="18" y2="4" stroke="var(--orange)" stroke-width="2" stroke-dasharray="2 2"/>
+          <div class="identity-card identity-card--blue">
+            <div class="identity-card-icon" style="background:#e8f3fb;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1c76ab" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle cx="12" cy="12" r="3"/>
               </svg>
             </div>
-            <h3>Visión</h3>
-            <p>Forjar un futuro para Iberoamérica donde la política recupere su propósito de servicio, las instituciones trabajen para todos y la democracia se viva como una promesa cumplida de justicia y prosperidad.</p>
+            <h3 class="identity-card-title">Visión</h3>
+            <p class="identity-card-text">
+              Forjar un futuro para Iberoamérica donde la política recupere su
+              propósito de servicio, las instituciones trabajen para todos y la
+              democracia se viva como una promesa cumplida de justicia y prosperidad.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- SECCIÓN 3: VALORES -->
-    <section id="valores" class="section bg-white">
-      <div class="container">
-        <span class="section-label">Lo que nos guía</span>
-        <h2 class="section-title">Nuestros valores institucionales</h2>
-        <div class="cards-3col">
-          <!-- Integridad -->
-          <div class="card card-hover-top">
-            <div class="card-icon">
-              <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M22 4 L36 10 L36 22 C36 30.8 29.6 38.8 22 41 C14.4 38.8 8 30.8 8 22 L8 10 Z" stroke="var(--orange)" stroke-width="2.5" stroke-linejoin="round"/>
-                <polyline points="16,22 20,27 29,17" stroke="var(--orange)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <section id="valores" class="section-white" aria-labelledby="valores-title">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">Lo que nos guía</span>
+          <h2 id="valores-title" class="section-title">Valores institucionales</h2>
+        </div>
+        <div class="valores-grid">
+
+          <!-- Card 1: Integridad -->
+          <div class="valor-card">
+            <div class="valor-icon" style="background:#fff3ec;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f86211" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <polyline points="9,12 11,14 15,10" stroke="#f86211" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </div>
-            <h3>Integridad</h3>
-            <p>Promovemos la ética en la política y en nuestras operaciones internas, asegurando un manejo responsable y abierto de la información.</p>
+            <h3 class="valor-title">Integridad</h3>
+            <p class="valor-text">
+              Promovemos la ética en la política y en nuestras operaciones, asegurando
+              un manejo responsable y abierto de la información.
+            </p>
           </div>
-          <!-- Cooperación -->
-          <div class="card card-hover-top">
-            <div class="card-icon">
-              <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <circle cx="14" cy="20" r="6" stroke="var(--orange)" stroke-width="2.5"/>
-                <circle cx="30" cy="20" r="6" stroke="var(--orange)" stroke-width="2.5"/>
-                <path d="M14 26 C8 26 4 30 4 36 L40 36 C40 30 36 26 30 26" stroke="var(--orange)" stroke-width="2.5" stroke-linecap="round"/>
-                <line x1="20" y1="20" x2="24" y2="20" stroke="var(--orange)" stroke-width="2.5"/>
+
+          <!-- Card 2: Cooperación -->
+          <div class="valor-card">
+            <div class="valor-icon" style="background:#e8f3fb;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1c76ab" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="#1c76ab"/>
+                <circle cx="9" cy="7" r="4" stroke="#1c76ab"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" stroke="#1c76ab"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="#1c76ab"/>
               </svg>
             </div>
-            <h3>Cooperación</h3>
-            <p>Creemos en el poder de la sinergia entre diferentes disciplinas y actores sociales. Fomentamos alianzas estratégicas para amplificar nuestro impacto en la sociedad.</p>
+            <h3 class="valor-title">Cooperación</h3>
+            <p class="valor-text">
+              Fomentamos alianzas estratégicas entre disciplinas y actores sociales
+              para amplificar nuestro impacto en la sociedad.
+            </p>
           </div>
-          <!-- Innovación -->
-          <div class="card card-hover-top">
-            <div class="card-icon">
-              <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M22 6 C15 6 10 11 10 18 C10 23 13 27 17 29 L17 34 L27 34 L27 29 C31 27 34 23 34 18 C34 11 29 6 22 6Z" stroke="var(--orange)" stroke-width="2.5" stroke-linejoin="round"/>
-                <line x1="17" y1="37" x2="27" y2="37" stroke="var(--orange)" stroke-width="2.5" stroke-linecap="round"/>
-                <line x1="19" y1="40" x2="25" y2="40" stroke="var(--orange)" stroke-width="2.5" stroke-linecap="round"/>
-                <line x1="22" y1="10" x2="22" y2="14" stroke="var(--orange)" stroke-width="2" stroke-linecap="round"/>
+
+          <!-- Card 3: Innovación -->
+          <div class="valor-card">
+            <div class="valor-icon" style="background:#fff8e6;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffa50c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="5" stroke="#ffa50c"/>
+                <line x1="12" y1="1" x2="12" y2="3" stroke="#ffa50c"/>
+                <line x1="12" y1="21" x2="12" y2="23" stroke="#ffa50c"/>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="#ffa50c"/>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="#ffa50c"/>
+                <line x1="1" y1="12" x2="3" y2="12" stroke="#ffa50c"/>
+                <line x1="21" y1="12" x2="23" y2="12" stroke="#ffa50c"/>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="#ffa50c"/>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="#ffa50c"/>
               </svg>
             </div>
-            <h3>Innovación</h3>
-            <p>Confiamos e impulsamos la adopción de enfoques innovadores en la ciencia política y la administración pública.</p>
+            <h3 class="valor-title">Innovación</h3>
+            <p class="valor-text">
+              Impulsamos enfoques innovadores en la ciencia política y la administración
+              pública para responder a los retos contemporáneos.
+            </p>
           </div>
-          <!-- Excelencia -->
-          <div class="card card-hover-top">
-            <div class="card-icon">
-              <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <polygon points="22,5 26.5,16.5 39,17.5 29.5,26 32.5,38.5 22,32 11.5,38.5 14.5,26 5,17.5 17.5,16.5" stroke="var(--orange)" stroke-width="2.5" stroke-linejoin="round"/>
+
+          <!-- Card 4: Excelencia -->
+          <div class="valor-card">
+            <div class="valor-icon" style="background:#fff0f0;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff5757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" stroke="#ff5757"/>
               </svg>
             </div>
-            <h3>Excelencia</h3>
-            <p>Nos esforzamos por alcanzar la máxima calidad en nuestra investigación, programas educativos y eventos.</p>
+            <h3 class="valor-title">Excelencia</h3>
+            <p class="valor-text">
+              Buscamos la máxima calidad en nuestra investigación, programas educativos
+              y eventos institucionales.
+            </p>
           </div>
-          <!-- Inclusión -->
-          <div class="card card-hover-top">
-            <div class="card-icon">
-              <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <circle cx="22" cy="14" r="5" stroke="var(--orange)" stroke-width="2.5"/>
-                <circle cx="10" cy="18" r="4" stroke="var(--orange)" stroke-width="2"/>
-                <circle cx="34" cy="18" r="4" stroke="var(--orange)" stroke-width="2"/>
-                <path d="M14 36 C14 30 17.5 26 22 26 C26.5 26 30 30 30 36" stroke="var(--orange)" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M6 36 C6 31 8 28 10 27" stroke="var(--orange)" stroke-width="2" stroke-linecap="round"/>
-                <path d="M38 36 C38 31 36 28 34 27" stroke="var(--orange)" stroke-width="2" stroke-linecap="round"/>
+
+          <!-- Card 5: Inclusión -->
+          <div class="valor-card">
+            <div class="valor-icon" style="background:#e8f3fb;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1c76ab" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="5" r="2" stroke="#1c76ab"/>
+                <path d="M12 7v8" stroke="#1c76ab"/>
+                <line x1="8" y1="12" x2="16" y2="12" stroke="#1c76ab"/>
+                <path d="M9 21l3-4 3 4" stroke="#1c76ab"/>
               </svg>
             </div>
-            <h3>Inclusión</h3>
-            <p>Aspiramos a que nuestras actividades y programas sean accesibles a todos. Impulsamos agendas de trabajo orientadas al cierre de brechas sociales.</p>
+            <h3 class="valor-title">Inclusión</h3>
+            <p class="valor-text">
+              Aspiramos a que nuestras actividades sean accesibles a todos e impulsamos
+              agendas orientadas al cierre de brechas sociales.
+            </p>
           </div>
-          <!-- Sostenibilidad -->
-          <div class="card card-hover-top">
-            <div class="card-icon">
-              <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M22 8 C14 8 8 14 8 22 C8 30 14 36 22 36 C30 36 36 30 36 22" stroke="var(--orange)" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M36 22 C36 16 32 11 26 9" stroke="var(--orange)" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M28 6 L36 10 L32 18" fill="var(--orange)" stroke="var(--orange)" stroke-width="1.5" stroke-linejoin="round"/>
-                <path d="M22 16 C22 16 26 18 24 24 C22 28 18 27 18 27 C18 27 14 22 18 18 C20 16 22 16 22 16Z" fill="var(--orange)" opacity="0.3"/>
-                <path d="M22 16 C22 16 26 18 24 24 C22 28 18 27 18 27 C18 27 14 22 18 18 C20 16 22 16 22 16Z" stroke="var(--orange)" stroke-width="2"/>
+
+          <!-- Card 6: Sostenibilidad -->
+          <div class="valor-card">
+            <div class="valor-icon" style="background:#fff3ec;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f86211" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" stroke="#f86211"/>
+                <path d="M2 12h20" stroke="#f86211"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="#f86211"/>
               </svg>
             </div>
-            <h3>Sostenibilidad</h3>
-            <p>Promovemos prácticas que aseguren la sostenibilidad a largo plazo de las instituciones democráticas y el desarrollo político, económico y social de nuestra comunidad.</p>
+            <h3 class="valor-title">Sostenibilidad</h3>
+            <p class="valor-text">
+              Promovemos prácticas que aseguren la viabilidad a largo plazo de las
+              instituciones democráticas y el desarrollo de nuestra comunidad.
+            </p>
           </div>
+
         </div>
       </div>
     </section>
 
     <!-- SECCIÓN 4: ORGANIGRAMA -->
-    <section id="organigrama" class="section bg-light">
-      <div class="container">
-        <span class="section-label">Cómo nos organizamos</span>
-        <h2 class="section-title">Estructura institucional 2026</h2>
-        <div class="org-chart">
-          <!-- Nivel 1 -->
+    <section id="organigrama" aria-labelledby="organigrama-title">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">Cómo nos organizamos</span>
+          <h2 id="organigrama-title" class="section-title">Estructura institucional 2026</h2>
+        </div>
+        <div class="org-chart" role="img" aria-label="Organigrama institucional AICIP">
           <div class="org-level">
-            <span class="org-node org-node--orange">Director Ejecutivo</span>
+            <div class="org-node org-node--orange">Director Ejecutivo</div>
           </div>
-          <div class="org-connector"></div>
-          <!-- Nivel 2 -->
+          <div class="org-connector" aria-hidden="true"></div>
           <div class="org-level">
-            <span class="org-node org-node--dark">Coordinador General</span>
+            <div class="org-node org-node--blue">Coordinador General</div>
           </div>
-          <div class="org-connector"></div>
-          <!-- Nivel 3 -->
+          <div class="org-connector" aria-hidden="true"></div>
           <div class="org-level">
-            <span class="org-node org-node--dark">Subcoordinador General</span>
+            <div class="org-node org-node--blue">Subcoordinador General</div>
           </div>
-          <div class="org-connector"></div>
-          <!-- Nivel 4 -->
+          <div class="org-connector" aria-hidden="true"></div>
           <div class="org-level">
-            <span class="org-node org-node--medium">Comisiones</span>
+            <div class="org-node org-node--gray">Comisiones</div>
           </div>
-          <div class="org-connector org-connector--branch"></div>
-          <!-- Nivel 5 -->
-          <div class="org-level org-level--branches">
-            <span class="org-node org-node--light">Logística</span>
-            <span class="org-node org-node--light">Investigación</span>
-            <span class="org-node org-node--light">Comunicaciones</span>
+          <div class="org-connector" aria-hidden="true"></div>
+          <div class="org-level org-level--row">
+            <div class="org-branch" aria-hidden="true"></div>
+            <div class="org-leaf-row">
+              <div class="org-node org-node--light">Logística</div>
+              <div class="org-node org-node--light">Investigación</div>
+              <div class="org-node org-node--light">Comunicaciones</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- SECCIÓN 5: EVENTOS -->
-    <section id="eventos" class="section bg-white">
-      <div class="container">
-        <span class="section-label">Nuestra trayectoria</span>
-        <h2 class="section-title">Actividades y eventos</h2>
-        <p class="section-subtitle">Espacios de formación, diálogo y análisis político para fortalecer la democracia en Iberoamérica.</p>
-        <div class="cards-2col">
-
-          <!-- Evento 1 -->
-          <div class="card card-event card-hover-left">
-            <div class="card-badges">
-              <span class="badge badge-category">Formación presencial</span>
-              <span class="badge badge-done">Realizado</span>
-            </div>
-            <h3>Primer Curso de Formación Política y Gestión Municipal</h3>
-            <div class="card-meta">
-              <div class="meta-row"><span class="meta-icon">📍</span><span>Pacarán, Cañete — Perú</span></div>
-              <div class="meta-row"><span class="meta-icon">🤝</span><span>AICIP · Municipalidad Distrital de Pacarán · DGIN</span></div>
-            </div>
-            <p>Espacio formativo intensivo orientado a fortalecer las capacidades de funcionarios y autoridades locales en el ejercicio de una gestión pública responsable. Los ejes temáticos incluyeron política en el sector público, estructura del Estado, enfoque de género, planeamiento estratégico, comunicación política y gobierno digital.</p>
-          </div>
-
-          <!-- Evento 2 -->
-          <div class="card card-event card-hover-left">
-            <div class="card-badges">
-              <span class="badge badge-category">Programa académico</span>
-              <span class="badge badge-concluded">Concluido</span>
-            </div>
-            <h3>IV Programa de Formación Política: Bicentenario 2021</h3>
-            <div class="card-meta">
-              <div class="meta-row"><span class="meta-icon">📅</span><span>13 de noviembre – 5 de diciembre, 2021</span></div>
-              <div class="meta-row"><span class="meta-icon">💻</span><span>Virtual · Plataforma Zoom</span></div>
-              <div class="meta-row"><span class="meta-icon">🎓</span><span>Ingreso libre y gratuito</span></div>
-            </div>
-            <p>Programa académico dirigido a jóvenes, líderes sociales, dirigentes de organizaciones políticas y ciudadanía en general. Una iniciativa para acercar el conocimiento político a quienes quieren participar activamente en la vida pública, en el marco de la conmemoración del Bicentenario del Perú.</p>
-          </div>
-
-          <!-- Evento 3 -->
-          <div class="card card-event card-hover-left">
-            <div class="card-badges">
-              <span class="badge badge-dialogos">#DiálogosAICIP</span>
-              <span class="badge badge-concluded">Concluido</span>
-            </div>
-            <h3>Conversatorio: ¿Bicameralismo o Unicameralismo?</h3>
-            <div class="card-meta">
-              <div class="meta-row"><span class="meta-icon">📅</span><span>22 de abril, 2022 — 7:00 p.m.</span></div>
-              <div class="meta-row"><span class="meta-icon">💻</span><span>Zoom y Facebook Live · Acceso libre</span></div>
-              <div class="meta-row"><span class="meta-icon">🎙</span><span>Alberto Espinoza y Carlos Delgado, politólogos</span></div>
-            </div>
-            <p>Debate técnico y riguroso sobre los modelos de representación parlamentaria y su impacto en el diseño institucional del Estado. Una conversación necesaria sobre qué tipo de Congreso necesita el Perú para legislar mejor y representar a todos.</p>
-          </div>
-
-          <!-- Evento 4 -->
-          <div class="card card-event card-hover-left">
-            <div class="card-badges">
-              <span class="badge badge-dialogos">#DiálogosAICIP</span>
-              <span class="badge badge-concluded">Concluido</span>
-            </div>
-            <h3>Conversatorio: La Descentralización y la Gestión Pública en el Bicentenario</h3>
-            <div class="card-meta">
-              <div class="meta-row"><span class="meta-icon">📅</span><span>18 de junio, 2021 — 6:00 p.m.</span></div>
-              <div class="meta-row"><span class="meta-icon">💻</span><span>Transmisión en vivo</span></div>
-            </div>
-            <p>Diálogo institucional sobre los retos pendientes de la descentralización peruana y la modernización del Estado a 200 años de vida republicana. Un análisis honesto sobre los avances, retrocesos y oportunidades de la gestión pública en las regiones.</p>
-          </div>
-
-          <!-- Evento 5 -->
-          <div class="card card-event card-hover-left">
-            <div class="card-badges">
-              <span class="badge badge-dialogos">#DiálogosAICIP</span>
-              <span class="badge badge-concluded">Concluido</span>
-            </div>
-            <h3>Conferencia: Elecciones Generales en el contexto del COVID-19</h3>
-            <div class="card-meta">
-              <div class="meta-row"><span class="meta-icon">📅</span><span>24 de julio, 2020 — 6:00 p.m.</span></div>
-              <div class="meta-row"><span class="meta-icon">💻</span><span>Plataforma Zoom</span></div>
-              <div class="meta-row"><span class="meta-icon">🎙</span><span>Virgilio Hurtado Cruz — Especialista en Derecho Electoral</span></div>
-              <div class="meta-row"><span class="meta-icon">🎤</span><span>Moderador: Walter Masgo Manco — Politólogo, Presidente de AICIP</span></div>
-            </div>
-            <p>Análisis técnico-legal sobre los desafíos de organizar elecciones en plena emergencia sanitaria. ¿Cómo garantizar el derecho al voto sin poner en riesgo la salud pública? Una conferencia que exploró las tensiones entre institucionalidad democrática y gestión de crisis.</p>
-          </div>
-
-          <!-- Evento 6 -->
-          <div class="card card-event card-hover-left">
-            <div class="card-badges">
-              <span class="badge badge-dialogos">#DiálogosAICIP</span>
-              <span class="badge badge-concluded">Concluido</span>
-            </div>
-            <h3>Ciclo de Conferencias Diálogos AICIP — Edición 2020</h3>
-            <div class="card-meta">
-              <div class="meta-row"><span class="meta-icon">📅</span><span>Junio – julio, 2020</span></div>
-              <div class="meta-row"><span class="meta-icon">💻</span><span>Virtual · Serie de encuentros semanales</span></div>
-            </div>
-            <p>Serie inaugural de conferencias virtuales que posicionó a AICIP como espacio de análisis político riguroso e independiente. Las sesiones abordaron ciencia política aplicada, poder mediático, funcionamiento del parlamento, comunicación parlamentaria, elecciones en pandemia, gobierno digital y transparencia pública.</p>
-          </div>
-
+    <section id="eventos" class="section-white" aria-labelledby="eventos-title">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">Nuestra trayectoria</span>
+          <h2 id="eventos-title" class="section-title">Actividades y eventos</h2>
+          <p class="section-intro">
+            Espacios de formación, diálogo y análisis político. Todos nuestros
+            eventos son de <strong>acceso libre y gratuito</strong>.
+          </p>
         </div>
 
-        <!-- Banner Eventos -->
-        <div class="banner banner-orange">
-          <h3>¿Quieres participar en nuestros próximos eventos?</h3>
-          <p>Síguenos en Facebook para enterarte de nuevas actividades, cursos y conversatorios.</p>
-          <a href="https://www.facebook.com/aicipoficial" target="_blank" rel="noopener noreferrer" class="btn btn-white-orange">Ir a nuestra página</a>
+        <div class="timeline">
+
+          <!-- Event 1 — Most recent -->
+          <div class="timeline-item timeline-item--recent">
+            <div class="timeline-dot timeline-dot--orange" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-year timeline-year--orange">Reciente</span>
+              <div class="event-card">
+                <div class="event-badges">
+                  <span class="badge badge--orange">Formación presencial</span>
+                  <span class="badge badge--green">✓ Realizado</span>
+                  <span class="badge badge--amber">Acceso libre</span>
+                </div>
+                <h3 class="event-title">Primer Curso de Formación Política y Gestión Municipal</h3>
+                <div class="event-meta">
+                  <p>📍 Pacarán, Cañete — Perú</p>
+                  <p>🤝 AICIP · Municipalidad Distrital de Pacarán · DGIN</p>
+                </div>
+                <p class="event-text">
+                  Espacio formativo intensivo para funcionarios y autoridades locales.
+                  Ejes: política en el sector público, estructura del Estado, enfoque de
+                  género, planeamiento estratégico, comunicación política y gobierno digital.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">Noviembre – Diciembre 2021</span>
+              <div class="event-card">
+                <div class="event-badges">
+                  <span class="badge badge--muted">Programa académico</span>
+                  <span class="badge badge--amber">Acceso libre</span>
+                  <span class="badge badge--muted">Concluido</span>
+                </div>
+                <h3 class="event-title">IV Programa de Formación Política: Bicentenario 2021</h3>
+                <div class="event-meta">
+                  <p>📅 13 nov – 5 dic, 2021 · Virtual · Zoom</p>
+                </div>
+                <p class="event-text">
+                  Programa académico gratuito dirigido a jóvenes, líderes sociales y
+                  ciudadanía en el marco del Bicentenario del Perú.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">Abril 2022</span>
+              <div class="event-card">
+                <div class="event-badges">
+                  <span class="badge badge--blue">#DiálogosAICIP</span>
+                  <span class="badge badge--amber">Acceso libre</span>
+                  <span class="badge badge--muted">Concluido</span>
+                </div>
+                <h3 class="event-title">Conversatorio: ¿Bicameralismo o Unicameralismo?</h3>
+                <div class="event-meta">
+                  <p>📅 22 abr, 2022 — 7:00 p.m. · Zoom y Facebook Live</p>
+                  <p>🎙 Alberto Espinoza y Carlos Delgado, politólogos</p>
+                </div>
+                <p class="event-text">
+                  Debate técnico sobre los modelos de representación parlamentaria
+                  y su impacto en el diseño institucional del Estado peruano.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 4 -->
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">Junio 2021</span>
+              <div class="event-card">
+                <div class="event-badges">
+                  <span class="badge badge--blue">#DiálogosAICIP</span>
+                  <span class="badge badge--amber">Acceso libre</span>
+                  <span class="badge badge--muted">Concluido</span>
+                </div>
+                <h3 class="event-title">Conversatorio: La Descentralización y la Gestión Pública en el Bicentenario</h3>
+                <div class="event-meta">
+                  <p>📅 18 jun, 2021 — 6:00 p.m. · Transmisión en vivo</p>
+                </div>
+                <p class="event-text">
+                  Diálogo sobre los retos de la descentralización peruana y la
+                  modernización del Estado a 200 años de vida republicana.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 5 -->
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">Julio 2020</span>
+              <div class="event-card">
+                <div class="event-badges">
+                  <span class="badge badge--blue">#DiálogosAICIP</span>
+                  <span class="badge badge--amber">Acceso libre</span>
+                  <span class="badge badge--muted">Concluido</span>
+                </div>
+                <h3 class="event-title">Conferencia: Elecciones Generales en el contexto del COVID-19</h3>
+                <div class="event-meta">
+                  <p>📅 24 jul, 2020 — 6:00 p.m. · Zoom</p>
+                  <p>🎙 Virgilio Hurtado Cruz — Derecho Electoral</p>
+                  <p>🎤 Mod: Walter Masgo Manco — Presidente de AICIP</p>
+                </div>
+                <p class="event-text">
+                  Análisis técnico-legal sobre los desafíos de organizar elecciones
+                  durante la emergencia sanitaria.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 6 -->
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">Junio – Julio 2020</span>
+              <div class="event-card">
+                <div class="event-badges">
+                  <span class="badge badge--blue">#DiálogosAICIP</span>
+                  <span class="badge badge--coral">Serie inaugural</span>
+                  <span class="badge badge--amber">Acceso libre</span>
+                </div>
+                <h3 class="event-title">Ciclo de Conferencias Diálogos AICIP — Edición 2020</h3>
+                <div class="event-meta">
+                  <p>📅 Junio – julio, 2020 · Virtual · Serie semanal</p>
+                </div>
+                <p class="event-text">
+                  Serie inaugural que posicionó a AICIP como espacio de análisis
+                  político independiente. Temas: ciencia política, poder mediático, parlamento,
+                  comunicación parlamentaria, gobierno digital y transparencia pública.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /timeline -->
+
+        <!-- Dual Banner -->
+        <div class="dual-banner">
+          <!-- Instagram -->
+          <div class="dual-banner-col dual-banner-col--ig">
+            <div class="dual-banner-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="white" stroke="none"/>
+              </svg>
+            </div>
+            <h3 class="dual-banner-title">Síguenos en Instagram para ver nuestros eventos</h3>
+            <p class="dual-banner-text">
+              Publicamos convocatorias, afiches y contenido político
+              de actualidad. Es nuestro canal visual principal.
+            </p>
+            <a href="https://www.instagram.com/aicipoficial/" target="_blank" rel="noopener noreferrer" class="dual-banner-btn dual-banner-btn--ig">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#833ab4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="#833ab4" stroke="none"/>
+              </svg>
+              @aicipoficial en Instagram
+            </a>
+          </div>
+          <!-- WhatsApp -->
+          <div class="dual-banner-col dual-banner-col--wa">
+            <div class="dual-banner-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+              </svg>
+            </div>
+            <h3 class="dual-banner-title">Únete al WhatsApp para recibir avisos de próximos eventos</h3>
+            <p class="dual-banner-text">
+              Te avisamos directamente cuando lancemos una nueva
+              actividad. Sin spam, solo lo que importa.
+            </p>
+            <a href="https://wa.me/51946807975?text=Hola%20AICIP%2C%20quiero%20recibir%20avisos%20de%20pr%C3%B3ximos%20eventos" target="_blank" rel="noopener noreferrer" class="dual-banner-btn dual-banner-btn--wa">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#128C7E" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+              </svg>
+              Escribir al WhatsApp
+            </a>
+          </div>
         </div>
+
       </div>
     </section>
 
     <!-- SECCIÓN 6: SERVICIOS -->
-    <section id="servicios" class="section bg-light">
-      <div class="container">
-        <span class="section-label">Lo que hacemos</span>
-        <h2 class="section-title">¿En qué podemos ayudarte?</h2>
-        <p class="section-subtitle">Acompañamos a personas, organizaciones e instituciones que quieren actuar en política con conocimiento, estrategia y ética.</p>
-        <div class="cards-3col">
+    <section id="servicios" aria-labelledby="servicios-title">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">Lo que hacemos</span>
+          <h2 id="servicios-title" class="section-title">¿En qué podemos ayudarte?</h2>
+          <p class="section-intro">
+            Acompañamos a personas, organizaciones e instituciones que quieren
+            actuar en política con conocimiento, estrategia y ética.
+          </p>
+        </div>
 
-          <!-- Servicio 1 -->
-          <div class="card card-service card-hover-bottom">
-            <div class="card-icon">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M24 6 C18 6 6 9 6 18 C6 22 8 25 12 27 L12 34 L24 38 L36 34 L36 27 C40 25 42 22 42 18 C42 9 30 6 24 6Z" stroke="var(--orange)" stroke-width="2.5" stroke-linejoin="round"/>
-                <line x1="24" y1="38" x2="24" y2="44" stroke="var(--orange)" stroke-width="2.5" stroke-linecap="round"/>
-                <line x1="18" y1="44" x2="30" y2="44" stroke="var(--orange)" stroke-width="2.5" stroke-linecap="round"/>
-                <line x1="16" y1="20" x2="32" y2="20" stroke="var(--orange)" stroke-width="2" stroke-linecap="round"/>
-                <line x1="19" y1="25" x2="29" y2="25" stroke="var(--orange)" stroke-width="2" stroke-linecap="round"/>
+        <div class="servicios-grid">
+
+          <!-- Card 1: Featured -->
+          <div class="servicio-card servicio-card--featured">
+            <span class="servicio-badge-top">⭐ Más solicitado</span>
+            <div class="servicio-icon" style="background:#f86211;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" stroke="white"/>
+                <path d="M6 12v5c3 3 9 3 12 0v-5" stroke="white"/>
               </svg>
             </div>
-            <h3>Formación política y capacitación</h3>
-            <p>Diseñamos y ejecutamos programas de formación para funcionarios públicos, líderes sociales, dirigentes partidarios y ciudadanía en general. Cursos presenciales, virtuales o híbridos adaptados a las necesidades de tu organización o institución.</p>
-            <div class="card-tags">
-              <span class="tag">Cursos</span>
-              <span class="tag">Diplomados</span>
-              <span class="tag">Talleres</span>
+            <h3 class="servicio-title">Formación política y capacitación</h3>
+            <p class="servicio-text">
+              Programas de formación para funcionarios públicos, líderes sociales y
+              ciudadanía. Presenciales, virtuales o híbridos a medida.
+            </p>
+            <div class="servicio-tags">
+              <span class="stag stag--orange">Cursos</span>
+              <span class="stag stag--orange">Diplomados</span>
+              <span class="stag stag--orange">Talleres</span>
             </div>
-            <a href="#contacto" class="card-link">Consultar →</a>
+            <a href="#contacto" class="servicio-btn" style="background:#f86211;">Consultar con AICIP →</a>
           </div>
 
-          <!-- Servicio 2 -->
-          <div class="card card-service card-hover-bottom">
-            <div class="card-icon">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="6" y="28" width="8" height="14" rx="2" stroke="var(--orange)" stroke-width="2.5"/>
-                <rect x="20" y="20" width="8" height="22" rx="2" stroke="var(--orange)" stroke-width="2.5"/>
-                <rect x="34" y="12" width="8" height="30" rx="2" stroke="var(--orange)" stroke-width="2.5"/>
-                <circle cx="38" cy="8" r="5" stroke="var(--orange)" stroke-width="2"/>
-                <line x1="42" y1="4" x2="46" y2="2" stroke="var(--orange)" stroke-width="2" stroke-linecap="round"/>
+          <!-- Card 2 -->
+          <div class="servicio-card">
+            <div class="servicio-icon" style="background:#e8f3fb;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1c76ab" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="#1c76ab"/>
               </svg>
             </div>
-            <h3>Investigación y análisis político</h3>
-            <p>Producimos investigación aplicada sobre comportamiento electoral, instituciones políticas, gestión pública y democracia en Iberoamérica. Informes de coyuntura, estudios temáticos y documentos de política pública para la toma de decisiones.</p>
-            <div class="card-tags">
-              <span class="tag">Estudios electorales</span>
-              <span class="tag">Políticas públicas</span>
-              <span class="tag">Informes</span>
+            <h3 class="servicio-title">Asesoría en campañas electorales</h3>
+            <p class="servicio-text">
+              Estrategia basada en evidencia: diagnóstico territorial, mensaje
+              político y comunicación digital.
+            </p>
+            <div class="servicio-tags">
+              <span class="stag stag--blue">Estrategia</span>
+              <span class="stag stag--blue">Comunicación</span>
+              <span class="stag stag--blue">Territorio</span>
             </div>
-            <a href="#contacto" class="card-link">Consultar →</a>
+            <a href="#contacto" class="servicio-btn" style="background:#1c76ab;">Consultar con AICIP →</a>
           </div>
 
-          <!-- Servicio 3 -->
-          <div class="card card-service card-hover-bottom">
-            <div class="card-icon">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M8 18 C8 14 11 12 14 12 L34 12 C37 12 40 14 40 18 L40 26 C40 30 37 32 34 32 L26 32 L18 40 L18 32 L14 32 C11 32 8 30 8 26 Z" stroke="var(--orange)" stroke-width="2.5" stroke-linejoin="round"/>
-                <circle cx="17" cy="22" r="2" fill="var(--orange)"/>
-                <circle cx="24" cy="22" r="2" fill="var(--orange)"/>
-                <circle cx="31" cy="22" r="2" fill="var(--orange)"/>
+          <!-- Card 3 -->
+          <div class="servicio-card">
+            <div class="servicio-icon" style="background:#fff8e6;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#b37a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="18" y1="20" x2="18" y2="10" stroke="#b37a00"/>
+                <line x1="12" y1="20" x2="12" y2="4" stroke="#b37a00"/>
+                <line x1="6" y1="20" x2="6" y2="14" stroke="#b37a00"/>
+                <line x1="2" y1="20" x2="22" y2="20" stroke="#b37a00"/>
               </svg>
             </div>
-            <h3>Asesoría en campañas electorales</h3>
-            <p>Acompañamos candidatos y partidos en el diseño de estrategias de campaña basadas en evidencia: diagnóstico territorial, mensaje político, comunicación digital y cumplimiento del marco normativo electoral.</p>
-            <div class="card-tags">
-              <span class="tag">Estrategia</span>
-              <span class="tag">Comunicación política</span>
-              <span class="tag">Territorio</span>
+            <h3 class="servicio-title">Investigación y análisis político</h3>
+            <p class="servicio-text">
+              Investigación aplicada sobre comportamiento electoral, instituciones
+              políticas y gestión pública.
+            </p>
+            <div class="servicio-tags">
+              <span class="stag stag--amber">Estudios</span>
+              <span class="stag stag--amber">Políticas públicas</span>
             </div>
-            <a href="#contacto" class="card-link">Consultar →</a>
+            <a href="#contacto" class="servicio-btn" style="background:#b37a00;">Consultar con AICIP →</a>
           </div>
 
-          <!-- Servicio 4 -->
-          <div class="card card-service card-hover-bottom">
-            <div class="card-icon">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="8" y="18" width="32" height="24" rx="2" stroke="var(--orange)" stroke-width="2.5"/>
-                <path d="M14 18 L14 12 C14 9 16 8 24 8 C32 8 34 9 34 12 L34 18" stroke="var(--orange)" stroke-width="2.5"/>
-                <rect x="20" y="30" width="8" height="12" rx="1" stroke="var(--orange)" stroke-width="2"/>
-                <line x1="4" y1="42" x2="44" y2="42" stroke="var(--orange)" stroke-width="2.5" stroke-linecap="round"/>
-                <line x1="14" y1="26" x2="18" y2="26" stroke="var(--orange)" stroke-width="2" stroke-linecap="round"/>
-                <line x1="30" y1="26" x2="34" y2="26" stroke="var(--orange)" stroke-width="2" stroke-linecap="round"/>
+          <!-- Card 4 -->
+          <div class="servicio-card">
+            <div class="servicio-icon" style="background:#fff3ec;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f86211" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="#f86211"/>
+                <line x1="8" y1="21" x2="16" y2="21" stroke="#f86211"/>
+                <line x1="12" y1="17" x2="12" y2="21" stroke="#f86211"/>
               </svg>
             </div>
-            <h3>Consultoría en gestión pública</h3>
-            <p>Asesoramos a gobiernos locales, regionales y entidades del Estado en modernización institucional, planeamiento estratégico, gobierno digital y fortalecimiento de capacidades de sus equipos.</p>
-            <div class="card-tags">
-              <span class="tag">Municipalidades</span>
-              <span class="tag">Planeamiento</span>
-              <span class="tag">Modernización</span>
+            <h3 class="servicio-title">Consultoría en gestión pública</h3>
+            <p class="servicio-text">
+              Asesoramos a gobiernos locales en modernización institucional,
+              planeamiento estratégico y gobierno digital.
+            </p>
+            <div class="servicio-tags">
+              <span class="stag stag--orange">Municipalidades</span>
+              <span class="stag stag--orange">Planeamiento</span>
             </div>
-            <a href="#contacto" class="card-link">Consultar →</a>
+            <a href="#contacto" class="servicio-btn" style="background:#f86211;">Consultar con AICIP →</a>
           </div>
 
-          <!-- Servicio 5 -->
-          <div class="card card-service card-hover-bottom">
-            <div class="card-icon">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M6 14 C6 10 9 8 12 8 L28 8 C31 8 34 10 34 14 L34 22 C34 26 31 28 28 28 L20 28 L13 34 L13 28 L12 28 C9 28 6 26 6 22 Z" stroke="var(--orange)" stroke-width="2.5" stroke-linejoin="round"/>
-                <path d="M34 16 L36 16 C39 16 42 18 42 22 L42 28 C42 32 39 34 36 34 L35 34 L35 40 L28 34 L26 34" stroke="var(--orange)" stroke-width="2.5" stroke-linejoin="round"/>
+          <!-- Card 5 -->
+          <div class="servicio-card">
+            <div class="servicio-icon" style="background:#e8f3fb;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1c76ab" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="#1c76ab"/>
               </svg>
             </div>
-            <h3>Diálogos y espacios de debate</h3>
-            <p>Organizamos conversatorios, foros y conferencias que reúnen a expertos, tomadores de decisión y ciudadanía para debatir los grandes temas de la agenda política, democrática e institucional de la región.</p>
-            <div class="card-tags">
-              <span class="tag">Conversatorios</span>
-              <span class="tag">Foros</span>
-              <span class="tag">Conferencias</span>
+            <h3 class="servicio-title">Diálogos y espacios de debate</h3>
+            <p class="servicio-text">
+              Conversatorios, foros y conferencias que reúnen a expertos y
+              ciudadanía para debatir la agenda política.
+            </p>
+            <div class="servicio-tags">
+              <span class="stag stag--blue">Conversatorios</span>
+              <span class="stag stag--blue">Foros</span>
             </div>
-            <a href="#contacto" class="card-link">Consultar →</a>
+            <a href="#contacto" class="servicio-btn" style="background:#1c76ab;">Consultar con AICIP →</a>
           </div>
 
-          <!-- Servicio 6 -->
-          <div class="card card-service card-hover-bottom">
-            <div class="card-icon">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <circle cx="10" cy="24" r="6" stroke="var(--orange)" stroke-width="2.5"/>
-                <circle cx="38" cy="10" r="6" stroke="var(--orange)" stroke-width="2.5"/>
-                <circle cx="38" cy="38" r="6" stroke="var(--orange)" stroke-width="2.5"/>
-                <line x1="16" y1="21" x2="32" y2="13" stroke="var(--orange)" stroke-width="2"/>
-                <line x1="16" y1="27" x2="32" y2="35" stroke="var(--orange)" stroke-width="2"/>
+          <!-- Card 6 -->
+          <div class="servicio-card">
+            <div class="servicio-icon" style="background:#fff0f0;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ff5757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="18" cy="5" r="3" stroke="#ff5757"/>
+                <circle cx="6" cy="12" r="3" stroke="#ff5757"/>
+                <circle cx="18" cy="19" r="3" stroke="#ff5757"/>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" stroke="#ff5757"/>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" stroke="#ff5757"/>
               </svg>
             </div>
-            <h3>Cooperación interinstitucional</h3>
-            <p>Articulamos alianzas entre organizaciones de la sociedad civil, academia, sector público y organismos internacionales para desarrollar iniciativas de impacto en gobernanza democrática y participación ciudadana.</p>
-            <div class="card-tags">
-              <span class="tag">Alianzas</span>
-              <span class="tag">Sociedad civil</span>
-              <span class="tag">Cooperación</span>
+            <h3 class="servicio-title">Cooperación interinstitucional</h3>
+            <p class="servicio-text">
+              Articulamos alianzas entre sociedad civil, academia, sector público
+              y organismos internacionales.
+            </p>
+            <div class="servicio-tags">
+              <span class="stag stag--coral">Alianzas</span>
+              <span class="stag stag--coral">Cooperación</span>
             </div>
-            <a href="#contacto" class="card-link">Consultar →</a>
+            <a href="#contacto" class="servicio-btn" style="background:#ff5757;">Consultar con AICIP →</a>
           </div>
 
         </div>
 
-        <!-- Banner Servicios -->
-        <div class="banner banner-dashed">
-          <p class="banner-question">¿Tienes una necesidad específica que no ves aquí?</p>
-          <p class="banner-sub">Conversemos. Diseñamos propuestas a medida para cada organización.</p>
-          <a href="#contacto" class="btn btn-primary">Escríbenos</a>
+        <!-- Banner -->
+        <div class="servicios-banner">
+          <p class="servicios-banner-text">¿Tienes una necesidad específica que no ves aquí?</p>
+          <p class="servicios-banner-sub">Conversemos. Diseñamos propuestas a medida para cada organización.</p>
+          <a href="#contacto" class="btn-primary">Escríbenos directamente →</a>
         </div>
+
       </div>
     </section>
 
     <!-- SECCIÓN 7: PUBLICACIONES -->
-    <section id="publicaciones" class="section bg-white">
-      <div class="container">
-        <span class="section-label">Producción académica</span>
-        <h2 class="section-title">Investigación y publicaciones</h2>
-        <div class="cards-3col">
-          <!-- Placeholder 1 -->
-          <div class="card card-placeholder">
-            <div class="card-icon-gray">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="6" y="4" width="22" height="30" rx="2" stroke="#9CA3AF" stroke-width="2"/>
-                <path d="M28 4 L34 10 L34 34 H12 V36 H36 V10 Z" stroke="#9CA3AF" stroke-width="2" stroke-linejoin="round"/>
-                <line x1="11" y1="14" x2="23" y2="14" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="11" y1="19" x2="23" y2="19" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="11" y1="24" x2="19" y2="24" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <h3 class="placeholder-title">Próximamente</h3>
-            <p class="placeholder-sub">Working paper / Documento de investigación</p>
-            <p class="placeholder-year">2025–2026</p>
-            <button class="btn btn-disabled" disabled>Ver publicación</button>
-          </div>
-          <!-- Placeholder 2 -->
-          <div class="card card-placeholder">
-            <div class="card-icon-gray">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="6" y="4" width="22" height="30" rx="2" stroke="#9CA3AF" stroke-width="2"/>
-                <path d="M28 4 L34 10 L34 34 H12 V36 H36 V10 Z" stroke="#9CA3AF" stroke-width="2" stroke-linejoin="round"/>
-                <line x1="11" y1="14" x2="23" y2="14" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="11" y1="19" x2="23" y2="19" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="11" y1="24" x2="19" y2="24" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <h3 class="placeholder-title">Próximamente</h3>
-            <p class="placeholder-sub">Working paper / Documento de investigación</p>
-            <p class="placeholder-year">2025–2026</p>
-            <button class="btn btn-disabled" disabled>Ver publicación</button>
-          </div>
-          <!-- Placeholder 3 -->
-          <div class="card card-placeholder">
-            <div class="card-icon-gray">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="6" y="4" width="22" height="30" rx="2" stroke="#9CA3AF" stroke-width="2"/>
-                <path d="M28 4 L34 10 L34 34 H12 V36 H36 V10 Z" stroke="#9CA3AF" stroke-width="2" stroke-linejoin="round"/>
-                <line x1="11" y1="14" x2="23" y2="14" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="11" y1="19" x2="23" y2="19" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="11" y1="24" x2="19" y2="24" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <h3 class="placeholder-title">Próximamente</h3>
-            <p class="placeholder-sub">Working paper / Documento de investigación</p>
-            <p class="placeholder-year">2025–2026</p>
-            <button class="btn btn-disabled" disabled>Ver publicación</button>
-          </div>
+    <section id="publicaciones" class="section-white" aria-labelledby="publicaciones-title">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">Producción académica</span>
+          <h2 id="publicaciones-title" class="section-title">Investigación y publicaciones</h2>
         </div>
-        <p class="publications-note">El equipo AICIP se encuentra preparando sus primeras publicaciones de investigación. Las compartiremos aquí próximamente.</p>
+        <div class="publicaciones-grid">
+
+          <div class="pub-card">
+            <div class="pub-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14,2 14,8 20,8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10,9 9,9 8,9"/>
+              </svg>
+            </div>
+            <h3 class="pub-title">Próximamente</h3>
+            <p class="pub-subtitle">Working paper / Documento de investigación</p>
+            <span class="pub-year">2025–2026</span>
+            <button class="pub-btn" disabled>Ver publicación</button>
+          </div>
+
+          <div class="pub-card">
+            <div class="pub-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14,2 14,8 20,8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10,9 9,9 8,9"/>
+              </svg>
+            </div>
+            <h3 class="pub-title">Próximamente</h3>
+            <p class="pub-subtitle">Working paper / Documento de investigación</p>
+            <span class="pub-year">2025–2026</span>
+            <button class="pub-btn" disabled>Ver publicación</button>
+          </div>
+
+          <div class="pub-card">
+            <div class="pub-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14,2 14,8 20,8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10,9 9,9 8,9"/>
+              </svg>
+            </div>
+            <h3 class="pub-title">Próximamente</h3>
+            <p class="pub-subtitle">Working paper / Documento de investigación</p>
+            <span class="pub-year">2025–2026</span>
+            <button class="pub-btn" disabled>Ver publicación</button>
+          </div>
+
+        </div>
+        <p class="pub-note">
+          El equipo AICIP está preparando sus primeras publicaciones de investigación.
+          Las compartiremos aquí próximamente.
+        </p>
       </div>
     </section>
 
     <!-- SECCIÓN 8: CONTACTO -->
-    <section id="contacto" class="section bg-dark">
-      <div class="container">
-        <span class="section-label section-label--orange">Hablemos</span>
-        <h2 class="section-title section-title--white">¿Quieres conectar con nosotros?</h2>
-        <div class="contact-grid">
-          <!-- Columna izquierda -->
-          <div class="contact-info">
-            <p class="contact-text">Estamos construyendo puentes entre el conocimiento político y la acción ciudadana. Si quieres colaborar, aliarte o simplemente saber más sobre AICIP, escríbenos.</p>
-            <a href="https://www.facebook.com/aicipoficial" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-full">Visítanos en Facebook</a>
-            <p class="contact-handle">También puedes encontrarnos como @aicipoficial</p>
+    <section id="contacto" class="section-dark" aria-labelledby="contacto-title">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label section-label--orange">Hablemos</span>
+          <h2 id="contacto-title" class="section-title section-title--white">¿Quieres conectar con nosotros?</h2>
+        </div>
+        <div class="contacto-grid">
+
+          <!-- Left: Info -->
+          <div class="contacto-info">
+            <p class="contacto-desc">
+              Estamos construyendo puentes entre el conocimiento político y la acción
+              ciudadana. Si quieres colaborar, aliarte o saber más sobre AICIP, escríbenos.
+            </p>
+            <div class="contact-channels">
+
+              <a href="mailto:aicip.peru@gmail.com" class="contact-channel">
+                <div class="contact-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f86211" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-label">CORREO</span>
+                  <span class="contact-value">aicip.peru@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://wa.me/51946807975" target="_blank" rel="noopener noreferrer" class="contact-channel">
+                <div class="contact-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366" aria-hidden="true">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-label">WHATSAPP</span>
+                  <span class="contact-value">+51 946 807 975</span>
+                </div>
+              </a>
+
+              <a href="https://www.instagram.com/aicipoficial/" target="_blank" rel="noopener noreferrer" class="contact-channel">
+                <div class="contact-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E1306C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                    <circle cx="12" cy="12" r="4"/>
+                    <circle cx="17.5" cy="6.5" r="1" fill="#E1306C" stroke="none"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-label">INSTAGRAM</span>
+                  <span class="contact-value">@aicipoficial</span>
+                </div>
+              </a>
+
+              <a href="https://www.facebook.com/aicipoficial" target="_blank" rel="noopener noreferrer" class="contact-channel">
+                <div class="contact-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#1877F2" aria-hidden="true">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-label">FACEBOOK</span>
+                  <span class="contact-value">aicipoficial</span>
+                </div>
+              </a>
+
+            </div>
           </div>
-          <!-- Columna derecha: formulario -->
-          <div class="contact-form-wrapper">
-            <form class="contact-form" aria-label="Formulario de contacto">
-              <div class="form-group">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" autocomplete="name">
+
+          <!-- Right: Form -->
+          <div class="contacto-form-wrap">
+            <form class="contacto-form" action="#" method="post" aria-label="Formulario de contacto">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" class="form-input" autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label for="correo" class="form-label">Correo electrónico</label>
+                  <input type="email" id="correo" name="correo" placeholder="tu@correo.com" class="form-input" autocomplete="email">
+                </div>
               </div>
               <div class="form-group">
-                <label for="correo">Correo electrónico</label>
-                <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" autocomplete="email">
+                <label for="asunto" class="form-label">Asunto</label>
+                <input type="text" id="asunto" name="asunto" placeholder="¿En qué podemos ayudarte?" class="form-input">
               </div>
               <div class="form-group">
-                <label for="asunto">Asunto</label>
-                <input type="text" id="asunto" name="asunto" placeholder="¿En qué podemos ayudarte?">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos más..." class="form-input form-textarea"></textarea>
               </div>
-              <div class="form-group">
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-full">Enviar mensaje</button>
-              <p class="form-note">Formulario en construcción. Por ahora puedes contactarnos directamente por Facebook.</p>
+              <button type="submit" class="form-submit">Enviar mensaje</button>
+              <p class="form-note">Formulario en construcción — por ahora contáctanos por WhatsApp o Instagram.</p>
             </form>
           </div>
+
         </div>
       </div>
     </section>
@@ -568,19 +814,26 @@
   </main>
 
   <!-- FOOTER -->
-  <footer>
+  <footer id="footer" role="contentinfo">
     <div class="footer-container">
       <div class="footer-grid">
-        <!-- Col 1 -->
-        <div class="footer-col">
-          <img src="logos/NEGATIVO.png" alt="AICIP" height="48">
-          <p class="footer-tagline">Conectamos ideas, formamos líderes.</p>
+
+        <!-- Col 1: Brand -->
+        <div class="footer-col footer-col--brand">
+          <a href="#inicio">
+            <img src="logos/logo-blanco.svg" alt="AICIP" height="44">
+          </a>
+          <p class="footer-tagline">
+            Academia Iberoamericana de Ciencia Política<br>
+            Conectamos ideas, formamos líderes.
+          </p>
           <p class="footer-location">Lima, Perú · 2026</p>
         </div>
-        <!-- Col 2 -->
+
+        <!-- Col 2: Navigation -->
         <div class="footer-col">
-          <h4 class="footer-heading">Navegación</h4>
-          <ul class="footer-links">
+          <h3 class="footer-heading">Navegación</h3>
+          <ul class="footer-links" role="list">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#quienes-somos">Quiénes somos</a></li>
             <li><a href="#valores">Valores</a></li>
@@ -591,50 +844,114 @@
             <li><a href="#contacto">Contacto</a></li>
           </ul>
         </div>
-        <!-- Col 3 -->
+
+        <!-- Col 3: Social -->
         <div class="footer-col">
-          <h4 class="footer-heading">Síguenos</h4>
-          <a href="https://www.facebook.com/aicipoficial" target="_blank" rel="noopener noreferrer" class="footer-social">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-            </svg>
-            AICIP Oficial
-          </a>
+          <h3 class="footer-heading">Síguenos</h3>
+          <ul class="footer-social" role="list">
+            <li>
+              <a href="https://www.instagram.com/aicipoficial/" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+                </svg>
+                Instagram @aicipoficial
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/51946807975?text=Hola%20AICIP%2C%20quiero%20recibir%20avisos%20de%20pr%C3%B3ximos%20eventos" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+                </svg>
+                WhatsApp · Avisos de eventos
+              </a>
+            </li>
+            <li>
+              <a href="mailto:aicip.peru@gmail.com">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                aicip.peru@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/aicipoficial" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                Facebook @aicipoficial
+              </a>
+            </li>
+          </ul>
         </div>
+
       </div>
+
+      <!-- Bottom bar -->
       <div class="footer-bottom">
-        <p>© 2026 Academia Iberoamericana de Ciencia Política — AICIP. Todos los derechos reservados.</p>
+        <span>© 2026 Academia Iberoamericana de Ciencia Política — AICIP. Todos los derechos reservados.</span>
+        <span>Lima, Perú</span>
       </div>
     </div>
   </footer>
 
+  <!-- COLOR STRIP BOTTOM -->
+  <div class="color-strip color-strip-bottom" aria-hidden="true"></div>
+
+  <!-- BACK TO TOP -->
+  <button id="back-top" aria-label="Volver al inicio" title="Volver al inicio">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18,15 12,9 6,15"/>
+    </svg>
+  </button>
+
   <script>
     // Navbar scroll behavior
     const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', function () {
+    const logoImg = document.getElementById('nav-logo-img');
+    const backTop = document.getElementById('back-top');
+
+    window.addEventListener('scroll', () => {
       if (window.scrollY > 60) {
         navbar.classList.add('scrolled');
+        logoImg.src = 'logos/logo-color.svg';
       } else {
         navbar.classList.remove('scrolled');
+        logoImg.src = 'logos/logo-blanco.svg';
+      }
+      // Back to top visibility
+      if (window.scrollY > 400) {
+        backTop.classList.add('visible');
+      } else {
+        backTop.classList.remove('visible');
       }
     });
 
-    // Hamburger menu toggle
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
-    hamburger.addEventListener('click', function () {
-      const isOpen = navLinks.classList.toggle('nav-open');
-      hamburger.setAttribute('aria-expanded', isOpen);
+    // Back to top click
+    backTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // Close mobile menu on link click
-    navLinks.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        navLinks.classList.remove('nav-open');
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+      hamburger.classList.toggle('active', isOpen);
+    });
+
+    // Close menu on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
         hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.classList.remove('active');
       });
     });
   </script>
-
 </body>
 </html>
