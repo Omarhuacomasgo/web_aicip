@@ -38,10 +38,8 @@
     nav{background:var(--negro);border-bottom:.5px solid rgba(255,255,255,.08);position:sticky;top:0;z-index:100}
     .nav-inner{max-width:1060px;margin:0 auto;padding:0 24px;height:56px;display:flex;align-items:center;gap:20px}
     .nav-logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
-    .nav-logo-mark{width:30px;height:30px;border-radius:6px;background:var(--naranja);display:flex;align-items:center;justify-content:center}
-    .nav-logo-text{display:flex;flex-direction:column;gap:1px}
-    .nav-logo-title{font-size:13px;font-weight:500;color:#fff;line-height:1}
-    .nav-logo-sub{font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:rgba(255,255,255,.35);line-height:1}
+    .nav-logo-img{height:32px;width:auto;display:block}
+    .foot-logo-img{height:28px;width:auto;display:block}
     .nav-links{display:flex;align-items:center;gap:2px;flex:1}
     .nav-links a{font-size:13px;color:rgba(255,255,255,.45);padding:6px 10px;border-radius:6px;transition:color .15s}
     .nav-links a:hover{color:#fff}
@@ -330,6 +328,18 @@
     .hero-ctas{opacity:0;transform:translateY(10px);transition:opacity .4s ease,transform .4s ease}
     .hero-ctas.show{opacity:1;transform:translateY(0)}
 
+    /* ── SPA SYSTEM ── */
+    .spa-section{display:none;opacity:0;transition:opacity 0.4s ease}
+    .spa-section.active{display:block;opacity:0}
+    .spa-section.visible{opacity:1}
+    .spa-section.fullscreen{min-height:calc(100vh - 56px);display:flex;flex-direction:column;justify-content:center}
+    .section-sep{display:none !important}
+    #equipo{display:none}
+    #quienes-somos.active ~ #equipo{display:block}
+    .nav-links a.nav-active{color:#fff;position:relative}
+    .nav-links a.nav-active::after{content:'';position:absolute;bottom:-4px;left:10px;right:10px;height:1.5px;background:#E8520A;border-radius:2px}
+    body.spa-transitioning{pointer-events:none}
+
     /* RESPONSIVE */
     @media(max-width:640px){
       .nav-links,.nav-cta{display:none}
@@ -363,16 +373,7 @@
 <nav role="banner">
   <div class="nav-inner">
     <a href="#inicio" class="nav-logo" aria-label="AICIP — Inicio">
-      <div class="nav-logo-mark" aria-hidden="true">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <rect x="7" y="2" width="2" height="12" rx="1" fill="white"/>
-          <rect x="2" y="7" width="12" height="2" rx="1" fill="white"/>
-        </svg>
-      </div>
-      <div class="nav-logo-text">
-        <span class="nav-logo-title">AICIP</span>
-        <span class="nav-logo-sub">Academia Iberoamericana</span>
-      </div>
+      <img src="logos/logo-blanco.svg" alt="AICIP" class="nav-logo-img" height="32">
     </a>
     <button class="nav-hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -390,19 +391,19 @@
 </nav>
 
 <!-- HERO -->
-<section id="inicio" class="hero" aria-label="Inicio">
+<section id="inicio" class="hero spa-section fullscreen active visible" aria-label="Inicio">
   <div class="hero-inner">
 
     <!-- LOGO ANIMADO -->
     <div class="hero-logo-wrap" id="heroLogo">
       <img
-        src="logos/logo-blanco.svg"
+        src="logos/logo-naranja.svg"
         alt="AICIP — Academia Iberoamericana de Ciencia Política"
         class="hero-logo-img"
         width="220"
-        onerror="this.style.display='none';this.nextElementSibling.style.display='block'"
+        onerror="this.style.display='none';document.getElementById('heroLogoFallback').style.display='block'"
       >
-      <span class="hero-logo-fallback" style="display:none;font-size:48px;font-weight:500;color:#fff;letter-spacing:.1em">AICIP</span>
+      <span id="heroLogoFallback" style="display:none;font-size:48px;font-weight:500;color:#E8520A;letter-spacing:0.08em">AICIP</span>
     </div>
 
     <!-- LÍNEA SEPARADORA -->
@@ -458,7 +459,7 @@
 <div class="section-sep" style="background:var(--crema)"><span class="sep-line"></span><span>quiénes somos</span><span class="sep-line"></span></div>
 
 <!-- QUIÉNES SOMOS -->
-<section id="quienes-somos" class="quienes">
+<section id="quienes-somos" class="quienes spa-section scrollable">
   <div class="sec-wrap-md">
     <p class="sec-label">Nuestra identidad</p>
     <h2 class="sec-h2">¿Quiénes somos?</h2>
@@ -469,14 +470,14 @@
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E8520A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
         <h3 class="card-title">Misión</h3>
-        <p class="card-text">Formamos a los servidores públicos que liderarán el futuro, conectamos a la ciudadanía con la política y proponemos soluciones para los desafíos de la gobernanza democrática.</p>
+        <p class="card-text">Simplificamos la política para quienes van a transformarla.</p>
       </div>
       <div class="card">
         <div class="card-icon ic-azul" aria-hidden="true">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
         <h3 class="card-title">Visión</h3>
-        <p class="card-text">Forjar un futuro para Iberoamérica donde la política recupere su propósito de servicio y la democracia sea una promesa cumplida de justicia y prosperidad.</p>
+        <p class="card-text">Forjar un futuro para Iberoamérica donde la política recupere su propósito de servicio.</p>
       </div>
     </div>
   </div>
@@ -545,7 +546,7 @@
 <div class="section-sep" style="background:var(--crema)"><span class="sep-line"></span><span>eventos</span><span class="sep-line"></span></div>
 
 <!-- EVENTOS -->
-<section id="eventos" class="eventos">
+<section id="eventos" class="eventos spa-section scrollable">
   <div class="ev-inner">
     <p class="sec-label">Actividades y eventos</p>
     <h2 class="sec-h2" style="margin-bottom:28px">Espacios de formación y diálogo</h2>
@@ -604,7 +605,7 @@
 <div class="section-sep" style="background:var(--crema)"><span class="sep-line"></span><span>acompañamiento</span><span class="sep-line"></span></div>
 
 <!-- ACOMPAÑAMIENTO -->
-<section id="acompanamiento" class="acomp">
+<section id="acompanamiento" class="acomp spa-section scrollable">
   <div class="sec-wrap">
     <p class="sec-label">Cómo podemos acompañarte</p>
     <h2 class="sec-h2">Conocimiento político al alcance de todos</h2>
@@ -675,7 +676,7 @@
 <div class="section-sep" style="background:var(--crema)"><span class="sep-line"></span><span>comisiones</span><span class="sep-line"></span></div>
 
 <!-- COMISIONES -->
-<section id="comisiones" class="comisiones">
+<section id="comisiones" class="comisiones spa-section scrollable">
   <div class="sec-wrap">
     <p class="sec-label">Cómo nos organizamos</p>
     <h2 class="sec-h2">Únete a una comisión</h2>
@@ -783,7 +784,7 @@
 <div class="section-sep" style="background:var(--crema)"><span class="sep-line"></span><span>valores</span><span class="sep-line"></span></div>
 
 <!-- VALORES -->
-<section id="valores" class="valores">
+<section id="valores" class="valores spa-section scrollable">
   <div class="valores-inner">
     <p class="sec-label">Lo que nos guía</p>
     <h2 class="sec-h2">Valores institucionales</h2>
@@ -812,7 +813,7 @@
 <div class="section-sep" style="background:var(--crema)"><span class="sep-line"></span><span>publicaciones</span><span class="sep-line"></span></div>
 
 <!-- PUBLICACIONES -->
-<section id="publicaciones" class="pubs">
+<section id="publicaciones" class="pubs spa-section scrollable">
   <div class="sec-wrap">
     <p class="sec-label">Producción académica</p>
     <h2 class="sec-h2">Investigación y publicaciones</h2>
@@ -876,7 +877,7 @@
 <div class="section-sep dark" style="background:var(--negro)"><span class="sep-line"></span><span>contacto</span><span class="sep-line"></span></div>
 
 <!-- CONTACTO -->
-<section id="contacto" class="contacto">
+<section id="contacto" class="contacto spa-section fullscreen">
   <div class="sec-wrap">
     <p class="sec-label">Hablemos</p>
     <h2 class="sec-h2">¿Quieres conectar con AICIP?</h2>
@@ -941,10 +942,7 @@
   <footer role="contentinfo">
     <div class="foot-strip">
       <div class="foot-logo">
-        <div class="nav-logo-mark" style="width:26px;height:26px" aria-hidden="true">
-          <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><rect x="7" y="2" width="2" height="12" rx="1" fill="white"/><rect x="2" y="7" width="12" height="2" rx="1" fill="white"/></svg>
-        </div>
-        <div><div class="foot-name">AICIP</div><div class="foot-sub">Academia Iberoamericana de Ciencia Política</div></div>
+        <img src="logos/logo-blanco.svg" alt="AICIP" class="foot-logo-img" height="28">
       </div>
       <div class="foot-copy">© 2026 · Lima, Perú · Asociación civil sin fines de lucro</div>
     </div>
@@ -1104,6 +1102,139 @@ document.querySelectorAll('[data-pf]').forEach(b=>{
     });
   });
 });
+
+// ── SPA NAVIGATION ──
+(function() {
+
+  const DURATION = 400;
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  function getActive() {
+    return document.querySelector('.spa-section.active');
+  }
+
+  function navigateTo(targetId) {
+    const current = getActive();
+    const target = document.getElementById(targetId);
+    if (!target || current === target) return;
+
+    document.body.classList.add('spa-transitioning');
+
+    navLinks.forEach(a => {
+      a.classList.remove('nav-active');
+      a.removeAttribute('aria-current');
+      const href = a.getAttribute('href').replace('#', '');
+      if (href === targetId) {
+        a.classList.add('nav-active');
+        a.setAttribute('aria-current', 'page');
+      }
+    });
+
+    if (current) {
+      current.classList.remove('visible');
+      setTimeout(() => {
+        current.classList.remove('active');
+        current.style.display = 'none';
+        showSection(target);
+      }, DURATION);
+    } else {
+      showSection(target);
+    }
+
+    history.pushState({ section: targetId }, '', '#' + targetId);
+  }
+
+  function showSection(target) {
+    target.scrollTop = 0;
+    window.scrollTo(0, 0);
+
+    target.style.display = target.classList.contains('fullscreen') ? 'flex' : 'block';
+    target.classList.add('active');
+
+    target.getBoundingClientRect();
+
+    requestAnimationFrame(() => {
+      target.classList.add('visible');
+      document.body.classList.remove('spa-transitioning');
+
+      requestAnimationFrame(() => {
+        const heading = target.querySelector('h2, h1');
+        if (heading) {
+          heading.setAttribute('tabindex', '-1');
+          heading.focus({ preventScroll: true });
+        }
+      });
+
+      if (target.id === 'inicio') {
+        restartHeroAnimation();
+      }
+    });
+  }
+
+  function restartHeroAnimation() {
+    const els = [
+      'heroLogo', 'heroLine', 'heroFullname',
+      'heroTagline', 'heroDesc', 'heroNote', 'heroCtas'
+    ].map(id => document.getElementById(id)).filter(Boolean);
+    els.forEach(el => el.classList.remove('show'));
+    const delays = [100, 650, 900, 1100, 1400, 1550, 1700];
+    els.forEach((el, i) => {
+      setTimeout(() => el.classList.add('show'), delays[i] || 0);
+    });
+  }
+
+  navLinks.forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigateTo(a.getAttribute('href').replace('#', ''));
+    });
+  });
+
+  const logoLink = document.querySelector('a.nav-logo');
+  if (logoLink) {
+    logoLink.addEventListener('click', e => {
+      e.preventDefault();
+      navigateTo('inicio');
+    });
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    if (a.classList.contains('nav-logo')) return;
+    if (Array.from(navLinks).includes(a)) return;
+    a.addEventListener('click', e => {
+      const targetId = a.getAttribute('href').replace('#', '');
+      const target = document.getElementById(targetId);
+      if (target && target.classList.contains('spa-section')) {
+        e.preventDefault();
+        navigateTo(targetId);
+      }
+    });
+  });
+
+  window.addEventListener('popstate', e => {
+    navigateTo(e.state?.section || 'inicio');
+  });
+
+  const initialHash = window.location.hash.replace('#', '');
+  if (initialHash) {
+    const initialSection = document.getElementById(initialHash);
+    if (initialSection?.classList.contains('spa-section')) {
+      const hero = document.getElementById('inicio');
+      if (hero) { hero.classList.remove('active', 'visible'); hero.style.display = 'none'; }
+      navigateTo(initialHash);
+    }
+  }
+
+  const activeId = initialHash || 'inicio';
+  navLinks.forEach(a => {
+    const href = a.getAttribute('href').replace('#', '');
+    if (href === activeId) {
+      a.classList.add('nav-active');
+      a.setAttribute('aria-current', 'page');
+    }
+  });
+
+})();
 
 // HERO ANIMATION
 (function() {
